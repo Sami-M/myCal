@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name myCalApp.controller:MainCtrl
+ * @name myCalApp.controller:HomeCtrl
  * @description
- * # MainCtrl
+ * # HomeCtrl
  * Controller of the myCalApp
  */
 angular.module('myCalApp')
-  .controller('MainCtrl', function () {
+  .controller('HomeCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

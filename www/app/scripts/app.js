@@ -1,37 +1,68 @@
-'use strict';
+(function() {
+  'use strict';
 
-/**
- * @ngdoc overview
- * @name myCalApp
- * @description
- * # myCalApp
- *
- * Main module of the application.
- */
-angular
-  .module('myCalApp', [
+  angular.module('myCalApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
     'ngMessages',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    'ngTouch',
+    'ui.router'
+  ]);
+
+
+
+
+  //Load controller
+  angular.module('myCalApp')
+
+}());
+//'use strict';
+//
+///**
+// * @ngdoc overview
+// * @name myCalApp
+// * @description
+// * # myCalApp
+// *
+// * Main module of the application.
+// */
+//angular
+//  .module('myCalApp', [
+//    'ngAnimate',
+//    'ngAria',
+//    'ngCookies',
+//    'ngMessages',
+//    'ngResource',
+//    'ngRoute',
+//    'ngSanitize',
+//    'ngTouch',
+//    'ui.router'
+//  ])
+//
+//  .config(function($stateProvider,$urlRouterProvider, $locationProvider) {
+//    $locationProvider.html5Mode(true);
+//    $urlRouterProvider.otherwise("home");
+//
+//    $stateProvider
+//      .state('home', {
+//        url: '/',
+//        templateUrl: 'components/home/home.html',
+//        controller: 'HomeCtrl',
+//        authenticate: false
+//      })
+//  });
+//
+//  //.config(function ($routeProvider) {
+//  //  $routeProvider
+//  //    .when('/', {
+//  //      templateUrl: 'scripts/features/home/home.html',
+//  //      controller: 'MainCtrl',
+//  //      controllerAs: 'main'
+//  //    })
+//  //    .otherwise({
+//  //      redirectTo: '/'
+//  //    });
+//  //});
